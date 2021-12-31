@@ -1,23 +1,20 @@
 package org.but.feec.eshop.api;
 
-import javafx.beans.property.LongProperty;
-import javafx.beans.property.SimpleLongProperty;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
+import javafx.beans.property.*;
 
 public class PersonBasicView {
     private LongProperty id = new SimpleLongProperty();
     private StringProperty city = new SimpleStringProperty();
     private StringProperty email = new SimpleStringProperty();
-    private StringProperty givenName = new SimpleStringProperty();
-    private StringProperty familyName = new SimpleStringProperty();
-    private StringProperty PhoneNumber = new SimpleStringProperty();
+    private StringProperty first_name = new SimpleStringProperty();
+    private StringProperty last_name = new SimpleStringProperty();
+    private StringProperty phone_number = new SimpleStringProperty();
 
     public Long getId() {
         return idProperty().get();
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.idProperty().setValue(id);
     }
 
@@ -37,28 +34,28 @@ public class PersonBasicView {
         this.emailProperty().setValue(email);
     }
 
-    public String getGivenName() {
-        return givenNameProperty().get();
+    public String getLast_name() {
+        return first_nameProperty().get();
     }
 
     public void setGivenName(String givenName) {
-        this.givenNameProperty().setValue(givenName);
+        this.first_nameProperty().setValue(givenName);
     }
 
     public String getFamilyName() {
-        return familyNameProperty().get();
+        return last_nameProperty().get();
     }
 
     public void setFamilyName(String familyName) {
-        this.familyNameProperty().setValue(familyName);
+        this.last_nameProperty().setValue(familyName);
     }
 
     public String getPhoneNumber() {
-        return phoneNumberProperty().get();
+        return phone_numberProperty().get();
     }
 
     public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumberProperty().set(phoneNumber);
+        this.phone_numberProperty().set(phoneNumber);
     }
 
     public LongProperty idProperty() {
@@ -73,16 +70,16 @@ public class PersonBasicView {
         return email;
     }
 
-    public StringProperty givenNameProperty() {
-        return givenName;
+    public StringProperty first_nameProperty() {
+        return first_name;
     }
 
-    public StringProperty familyNameProperty() {
-        return familyName;
+    public StringProperty last_nameProperty() {
+        return last_name;
     }
 
-    public StringProperty phoneNumberProperty() {
-        return PhoneNumber;
+    public StringProperty phone_numberProperty() {
+        return phone_number;
     }
 
 }

@@ -27,22 +27,17 @@
                 <RowConstraints />
             </rowConstraints>
             <children>
-                <Label text="id">
+                <Label text="email" GridPane.rowIndex="2">
                     <padding>
                         <Insets left="5.0" />
                     </padding>
                 </Label>
-                <Label text="email" GridPane.rowIndex="1">
+                <Label text="first name">
                     <padding>
                         <Insets left="5.0" />
                     </padding>
                 </Label>
-                <Label text="first name" GridPane.rowIndex="2">
-                    <padding>
-                        <Insets left="5.0" />
-                    </padding>
-                </Label>
-                <Label text="last name" GridPane.rowIndex="3">
+                <Label text="last name" GridPane.rowIndex="1">
                     <padding>
                         <Insets left="5.0" />
                     </padding>
@@ -52,32 +47,34 @@
                         <Insets left="5.0" />
                     </padding>
                 </Label>
-                <TextField fx:id="idTextField" GridPane.columnIndex="1" />
-                <TextField fx:id="emailTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                <TextField fx:id="firstNameTextField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                <TextField fx:id="lastNameTextField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                <TextField fx:id="phoneNumberTextField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <Label text="city" GridPane.rowIndex="5">
-               <GridPane.margin>
-                  <Insets />
-               </GridPane.margin>
+                <TextField fx:id="firstNameTextField" GridPane.columnIndex="1" />
+                <TextField fx:id="lastNameTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <TextField fx:id="emailTextField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <TextField fx:id="PhoneNumberTextField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="house number" GridPane.rowIndex="5">
                <padding>
                   <Insets left="5.0" />
                </padding>
             </Label>
-            <Label text="house number" GridPane.rowIndex="6">
+            <Label text="street" GridPane.rowIndex="6">
                <padding>
                   <Insets left="5.0" />
                </padding>
             </Label>
-            <Label text="street" GridPane.rowIndex="7">
+            <TextField fx:id="houseNumberTextField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="streetTextField" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label text="account type" GridPane.rowIndex="3">
                <padding>
                   <Insets left="5.0" />
                </padding>
             </Label>
-            <TextField fx:id="cityTextField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-            <TextField fx:id="houseNumberTextField" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-            <TextField fx:id="streetTextField" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="accountTextField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="cityTextField" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label text="city" GridPane.rowIndex="7">
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
             </children>
         </GridPane>
     </children>
